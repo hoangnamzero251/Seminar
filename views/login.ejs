@@ -1,0 +1,49 @@
+<form method="POST" id="loginForm" action="/Sendanyway/confirmLogin">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" id="emailLogin" class="form-control col-md-6" name="emailLogin" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control col-md-6" id="passLogin" name="passLogin" placeholder="Password">
+  </div>
+  <button type="submit" id="LoginPage"  class="btn btn-primary">Submit</button>
+</form>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+function login(e) {
+    e.preventDefault()
+    // const url="http://localhost:1337/Sendanyway/confirmLogin";
+    console.log(e.target.value)
+    // fetch(url)
+    // .then(data=>{return data.json()})
+    // .then(res=>{console.log(res)})
+}
+
+// document.querySelector("#loginForm").addEventListener("submit", function (event) {
+//   event.preventDefault()
+//   console.log(event);
+//   var user 
+//   user = document.getElementById("#emailLogin").value()
+//   console.log(user);
+$( document ).ready(function() {
+  $( "#loginForm" ).submit(function( event ) {
+    event.preventDefault()
+
+    $.ajax({
+      
+      url: "http://localhost:1337/Sendanyway/confirmLogin", 
+      data:  $( "#loginForm" ).serialize(), 
+      success: function(result){
+        // console.log($("#emailLogin").val(), $("#passLogin").val());
+      },
+    });
+  });
+
+});
+
+  
+</script> -->
